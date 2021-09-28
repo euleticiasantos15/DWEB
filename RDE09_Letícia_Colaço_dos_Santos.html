@@ -20,6 +20,31 @@
         <h3>Incorporar vídeos ao site</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fYJl-7jRzuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        
+        <h2>Tag vídeo</h2>
+        <p> Essa tag é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros fluxos de vídeo.
+        A tag vídeo contém uma ou mais source tags com diferentes fontes de vídeo. O navegador escolherá a primeira fonte que suporta.</p>
+        <video poster="video/Bike.jpg" controls>
+            <source src="video/_Bike.mp4" type="video/mp4">
+            <source src="video/Bike.webm" type="video/webm">
+            <source src="video/Bike.ogv" type="video/ogv">
+        </video>
+
+        <h2>Tag de áudio</h2>
+        <p>A tag audio é usada para incorporar conteúdo de som em um documento, como música ou outros fluxos de áudio. Essa tag contém uma ou mais source tags com diferentes fontes de áudio. O navegador escolherá a primeira fonte que suporta. Existem três formatos de áudio suportados em HTML: MP3, WAV e OGG.</p>
+        <p>No YouTube há uma biblioteca de áudio nessa Biblioteca de áudio você encontra produções musicais e efeitos sonoros livres de royalties para usar nos seus vídeos. As músicas e os efeitos sonoros da Biblioteca de áudio não têm restrições de direitos autorais. Esse recurso é exclusivo do YouTube Studio.</p>
+        <audio preload="metadata" controls>
+            <source src="audio/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+            <source src="audio/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+            <source src="audio/Hey-Sailor-Letter-Box.wav" type="audio/wav">
+        </audio>
+
+        <h2>Tag Picture</h2>
+        <p>A tag oferece aos desenvolvedores da web mais flexibilidade na especificação de recursos de imagem. O uso mais comum do picture elemento será para direção de arte em designs responsivos. Em vez de ter uma imagem que é dimensionada para cima ou para baixo com base na largura da janela de visualização, várias imagens podem ser projetadas para preencher melhor a janela de visualização do navegador.</p>
+        <picture>
+            <source media="(max-width:500px)" srcset="img/bike_110.jpg">
+            <source media="(max-width:700px)" srcset="img/bike_320.jpg">
+            <source media="(max-width:1000px)" srcset="img/bike_640.jpg">
+            <img src="img/bike_full.jpg" alt="Mtb Por-do-Sol">
+        </picture>
 </body>
 </html>
